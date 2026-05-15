@@ -11,3 +11,4 @@ build/
 htmlcov/
 *.pdf
 Ver*.md
+eval*.md

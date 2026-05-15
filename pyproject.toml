@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "evalforge"
-version = "1.0.0"
+version = "1.0.0-dev"
 
 authors = [
     { name = "Vishwanath M M", email = "vishwanathdvgmm@gmail.com" }
@@ -43,11 +43,11 @@ include = [
 ]
 
 [tool.black]
-line-length = 88
+line-length = 100
 target-version = ["py312"]
 
 [tool.ruff]
-line-length = 88
+line-length = 100
 target-version = "py312"
 
 [tool.ruff.lint]
