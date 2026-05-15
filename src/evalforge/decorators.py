@@ -41,8 +41,8 @@ def metric(fn: MetricFunction) -> MetricFunction:
         metadata={},
     )
 
-    setattr(wrapper, "__evalforge_metric__", True)
-    setattr(wrapper, "__evalforge_kind__", "rule")
+    wrapper.__evalforge_metric__ = True
+    wrapper.__evalforge_kind__ = "rule"
 
     return wrapper
 
@@ -93,11 +93,11 @@ def judge(
             metadata=metadata,
         )
 
-        setattr(wrapper, "__evalforge_metric__", True)
-        setattr(wrapper, "__evalforge_kind__", "judge")
-        setattr(wrapper, "__evalforge_provider__", provider_normalized)
-        setattr(wrapper, "__evalforge_model__", model)
-        setattr(wrapper, "__evalforge_threshold__", threshold)
+        wrapper.__evalforge_metric__ = True
+        wrapper.__evalforge_kind__ = "judge"
+        wrapper.__evalforge_provider__ = provider_normalized
+        wrapper.__evalforge_model__ = model
+        wrapper.__evalforge_threshold__ = threshold
 
         return wrapper
 
