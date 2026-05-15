@@ -1,29 +1,30 @@
 ```
 ├── 📁 src
 │   └── 📁 evalforge
-│       ├── 📁 evaluators
-│       │   ├── 🐍 agent.py
-│       │   ├── 🐍 rag.py
-│       │   └── 🐍 text.py
 │       ├── 📁 metrics
 │       │   ├── 📁 builtin
-│       │   ├── 🐍 judge.py
-│       │   └── 🐍 ruleset.py
+│       │   │   ├── 🐍 contains_answer.py
+│       │   │   ├── 🐍 faithfulness.py
+│       │   │   └── 🐍 relevance.py
+│       │   └── 🐍 judge.py
 │       ├── 📁 providers
 │       │   ├── 🐍 anthropic.py
 │       │   ├── 🐍 base.py
 │       │   ├── 🐍 gemini.py
 │       │   └── 🐍 ollama.py
 │       ├── 📁 reporters
-│       │   ├── 🐍 dashboard.py
 │       │   ├── 🐍 json_reporter.py
 │       │   └── 🐍 terminal.py
-│       ├── 📁 tracker
-│       │   ├── 🐍 gate.py
-│       │   └── 🐍 store.py
+│       ├── 🐍 __init__.py
+│       ├── 🐍 case.py
 │       ├── 🐍 decorators.py
 │       ├── 🐍 registry.py
 │       ├── 🐍 runner.py
-│       └── 🐍 suite.py
-└── 📝 STRUCTURE.md
+│       ├── 🐍 suite.py
+│       └── 🐍 types.py
+├── ⚙️ .gitignore
+├── 📝 ARCHITECTURE.md
+├── 📝 CHANGELOG.md
+├── 📄 LICENSE
+└── 📝 README.md
 ```
